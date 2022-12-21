@@ -7,12 +7,15 @@ type Props = {
 
 function Navlink({category}: Props) {
   return (
-    <Link 
-        href={`/${category}`}
-        className=""
-    >    
-            {category}
-    </Link>
+      <div className='grid grid-cols-4 md:grid-col-7'>
+        <a
+            href={`/${category}`}
+            className="navlink"    
+        >
+                {category}
+        </a>
+             
+    </div>
   )
 }
 
